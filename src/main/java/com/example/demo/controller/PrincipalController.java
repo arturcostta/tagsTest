@@ -16,4 +16,8 @@ public class PrincipalController {
     public String ola(@PathVariable String nome, @PathVariable String sobrenome){
         return "ola " + nome + " "+ sobrenome + " tudo bem?";
     }
+
+    private String olaaa(){
+        return "ola";
+    }
 }
