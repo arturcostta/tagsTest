@@ -12,8 +12,8 @@ public class PrincipalController {
         return "ola usuário, tudo bem?";
     }
 
-    @GetMapping("/saudacao/{nome}")
-    public String ola(@PathVariable String nome){
-        return "ola " + nome + " tudo bem?";
+    @GetMapping("/saudacao/{nome}/{sobrenome}")
+    public String ola(@PathVariable String nome, @PathVariable String sobrenome){
+        return "ola " + nome + " "+ sobrenome + " tudo bem?";
     }
 }
