@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class PrincipalController {
 
     @GetMapping("/saudacao")
-    public String ola(){
+    public String saudacao(){
         return "ola usuário, tudo bem?";
     }
 
     @GetMapping("/saudacao/{nome}")
-    public String ola(@PathVariable String nome){
+    public String saudacaoMelhorada(@PathVariable String nome){
         return "ola " + nome + " tudo bem?";
     }
 }
