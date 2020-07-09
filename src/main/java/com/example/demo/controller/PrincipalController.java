@@ -8,6 +8,6 @@ public class PrincipalController {
 
     @GetMapping("/saudacao")
     public String ola(){
-        return "ola usuário";
+        return "ola usuário, tudo bem?";
     }
 }
