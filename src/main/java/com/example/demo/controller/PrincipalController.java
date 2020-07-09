@@ -16,4 +16,8 @@ public class PrincipalController {
     public String saudacaoMelhorada(@PathVariable String nome){
         return "ola " + nome + " tudo bem?";
     }
+
+    private String ola(){
+        return "ola";
+    }
 }
